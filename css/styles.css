@@ -1,0 +1,237 @@
+/* geral */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Ubuntu;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+/* navbar */
+#navbar {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: top;
+    color: #FFF;
+    padding: 0 15px;
+    height: 500px;
+}
+
+#navbar h2, #navbar ul, #navbar-list li, #navbar nav {
+    display: inline-block;
+}
+
+#navbar h2 {
+    margin: 0px;
+    line-height: 60px;
+    margin-left: 55px;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#navbar img {
+    height: 40px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 9px;
+}
+
+#navbar nav {
+    margin: 0 50px;
+    float: right;
+}
+
+#navbar ul {
+    margin-top: 25px;
+    }
+
+#navbar li a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#navbar li a:hover {
+    background-color: rgb(245, 170, 10);
+    transition: 0.25s;
+    border-radius: 15px 0 15px 0;
+}
+
+#slogan {
+    margin: 50px 20px;
+    font-size: 50px;
+    width: 400px;
+}
+/* /navbar */
+
+/* área de pesquisa */
+#pesquisa {
+    margin-top: -100px;
+    background-color: #FFF;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px; 
+    padding: 100px;
+    box-shadow: 2px 2px 6px rgb(253, 215, 215);
+}
+
+#pesquisa h2 {
+    margin-bottom: 20px;
+}
+
+#pesquisa input {
+    border: none;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 180px;
+}
+
+#pesquisa .btn {
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: rgb(7, 7, 151);
+    color: #FFF;
+}
+
+/* destaques */
+
+#destaques-section {
+    padding-top: 50px;
+    margin: 10px;
+}
+
+#destaques-section h2 {
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.destaques-container {
+    margin: auto;
+    max-width: 1220px;
+}
+
+.pack {
+    display: inline-block;
+    width: 280px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px rgb(253, 215, 215);
+}
+
+.pack-image {
+    height: 150px;
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.pack-description .pack-title {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+}
+
+.pack-description .pack-days {
+    padding: 10px;
+    color: #000;
+}
+
+.pack-description .pack-info {
+    font-size: 12px;
+    margin-left: 10px;
+    color: #000;
+}
+
+.pack-description .pack-price {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color:rgb(245, 170, 10)
+    
+}
+
+.pack-1 .pack-image {
+    background-image: url(../img/pack1.jpg);
+}
+
+.pack-2 .pack-image {
+    background-image: url(../img/pack2.jpg);
+}
+
+.pack-3 .pack-image {
+    background-image: url(../img/pack3.jpg);
+}
+
+.pack-4 .pack-image {
+    background-image: url(../img/pack4.jpg);
+}
+
+.pack-5 .pack-image {
+    background-image: url(../img/pack5.jpg);
+}
+
+.pack-6 .pack-image {
+    background-image: url(../img/pack6.jpg);
+}
+
+.pack-7 .pack-image {
+    background-image: url(../img/pack7.jpg);
+}
+
+.pack-8 .pack-image {
+    background-image: url(../img/pack8.jpg);
+}
+
+/* footer */
+
+footer {
+    background-color: rgb(14, 38, 114);
+    text-align: center;
+    padding: 10px;
+    color: #FFF;
+}
+
+
+/* responsivo celulares - media query */
+@media(max-width: 1000px) {
+    p, input, #navbar-list {
+        font-size: 1.2rem;
+    }
+
+    #navbar h2, img {
+        display: none;
+    }
+
+    #navbar li a {
+        display: inline-block;
+        padding: 10px 12px;
+    }
+
+    #slogan {
+        font-size: 1.8rem;
+    }
+
+    #pesquisa {
+        width: 40%;
+        text-align: center;
+    }
+
+    #pesquisa input {
+        margin-top: 50px;
+        width: 98%;
+    }
+
+
+    .destaques-container {
+        width: 75%;
+    }
+}
